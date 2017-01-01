@@ -1,0 +1,25 @@
+{
+  "name": "mheinzerling/ftp",
+  "description": "FTP extension object wrapping.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin Heinzerling",
+      "email": "webmaster@mheinzerling.de"
+    }
+  ],
+  "require": {
+    "php": "^7.1.0",
+    "ext-ftp": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.6.0",
+    "codeclimate/php-test-reporter": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "mheinzerling\\commons\\": "src/"
+    }
+  }
+}
