@@ -1,5 +1,5 @@
 {
-  "name": "mheinzerling/ftp",
+  "name": "mheinzerling/ftputils",
   "description": "FTP extension object wrapping.",
   "minimum-stability": "stable",
   "license": "MIT",
