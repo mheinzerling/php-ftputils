@@ -50,7 +50,7 @@ class ExtensionFtpConnection implements FtpConnection
         return $dir;
     }
 
-    public function delete(string $file, $ignore): void
+    public function delete(string $file): void
     {
         $deleted = ftp_delete($this->connection_id, $file);
         if ($deleted === false) throw new FtpException("Couldn't delete file >$file<");

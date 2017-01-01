@@ -16,7 +16,7 @@ interface FtpConnection
 
     public function mkdir(string $dir): string;
 
-    public function delete(string $file, $ignore): void;
+    public function delete(string $file): void;
 
     /**
      * @param $target
