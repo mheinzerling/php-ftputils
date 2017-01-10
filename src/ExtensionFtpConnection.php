@@ -93,11 +93,11 @@ class ExtensionFtpConnection implements FtpConnection
     public function get(string $target, $mode = FTP_ASCII): ?string
     {
         $temp = fopen('php://memory', 'r+');
-        if (ftp_fget($this->connection_id, $temp, $target, $mode, 0)) {
+        if (@ftp_fget($this->connection_id, $temp, $target, $mode, 0)) {
             rewind($temp);
             return stream_get_contents($temp);
         } else {
-            throw new FtpException("Error downloading file $target");
+            return null;
         }
     }
 }
